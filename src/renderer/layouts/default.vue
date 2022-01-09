@@ -1,21 +1,28 @@
 <template>
   <div>
-    <app-header />
     <nuxt />
   </div>
 </template>
 
 <script>
-import appHeader from '@/components/header'
-
 export default {
   name: 'DefaultLayout',
-  components: { appHeader }
+  components: {  }
 }
 </script>
 
 <style>
 body {
   margin: 0 !important;
+  background: #121212;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 15px;
+  color: #1051af
 }
 </style>

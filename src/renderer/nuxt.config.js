@@ -4,7 +4,6 @@
  * @link {https://nuxtjs.org/guide/configuration/}
  */
 
-
 module.exports = {
   ssr: false,
   target: 'static',
@@ -15,24 +14,27 @@ module.exports = {
   loading: false,
   plugins: [
     {ssr: true, src: '@/plugins/icons.js'},
-    
-    
+
+
   ],
   buildModules: [
-    
+    '@nuxtjs/vuetify',
   ],
   modules: [
-    '@nuxtjs/vuetify',
+
   ],
           vuetify: {
             theme: {
               themes: {
-                light: {
-                  primary: '#1867c0',
-                  secondary: '#b0bec5',
-                  accent: '#8c9eff',
-                  error: '#b71c1c',
-                },
+                dark: {
+                  primary: '#1976d2',
+                  accent: '#616161',
+                  secondary: '#ff8f00',
+                  info: '#26a69a',
+                  warning: '#ffc107',
+                  error: '#dd2c00',
+                  success: '#00e676'
+                }
               },
             }
           }
